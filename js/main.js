@@ -54,8 +54,9 @@
             // Verifica si textElement no es nulo
             if (!textElement) {
                 console.error("No se encontró un elemento con el ID 'animated-text'");
-                return;
+                //return;
             }
+            else{
         
             const text = textElement.textContent;
             textElement.textContent = '';  // Vaciar el contenido original
@@ -82,6 +83,7 @@
                         clearInterval(interval);
                     }
                 }, 100);  // Ajusta el tiempo entre letras (100 ms en este caso)
+            }
             }
         });
         
