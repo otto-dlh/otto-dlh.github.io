@@ -1,6 +1,36 @@
 (function ($) {
     "use strict";
+    const fechaObjetivo = new Date('2025-01-18T00:00:00').getTime();
+    $(document).ready(function () {
+        function actualizarReloj() {
+            const ahora = new Date().getTime();
+            const diferencia = fechaObjetivo - ahora;
 
+            // Cálculo de días, horas, minutos y segundos
+            const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+            const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+            const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+            // Actualizar el contenido de los elementos
+            $('#dias').text(String(dias).padStart(2, '0'));
+            $('#horas').text(String(horas).padStart(2, '0'));
+            $('#minutos').text(String(minutos).padStart(2, '0'));
+            $('#segundos').text(String(segundos).padStart(2, '0'));
+
+            // Verificar si la cuenta regresiva ha terminado
+            if (diferencia < 0) {
+                clearInterval(intervalo);
+                $('#dias').text('00');
+                $('#horas').text('00');
+                $('#minutos').text('00');
+                $('#segundos').text('00');
+            }
+        }
+
+        // Actualizar cada segundo
+        const intervalo = setInterval(actualizarReloj, 1000);
+    });
     /*function actualizarContador() {
         const fechaObjetivo = new Date('2025-01-18T00:00:00');
         const fechaActual = new Date();
@@ -47,20 +77,20 @@
         });
         */
 
-        document.addEventListener('DOMContentLoaded', function() {
-            const textContainer = document.querySelector('.text-container');
-            const textElement = document.getElementById('animated-text');
-        
-            // Verifica si textElement no es nulo
-            if (!textElement) {
-                console.error("No se encontró un elemento con el ID 'animated-text'");
-                //return;
-            }
-            else{
-        
+    document.addEventListener('DOMContentLoaded', function () {
+        const textContainer = document.querySelector('.text-container');
+        const textElement = document.getElementById('animated-text');
+
+        // Verifica si textElement no es nulo
+        if (!textElement) {
+            console.error("No se encontró un elemento con el ID 'animated-text'");
+            //return;
+        }
+        else {
+
             const text = textElement.textContent;
             textElement.textContent = '';  // Vaciar el contenido original
-        
+
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -70,9 +100,9 @@
                     }
                 });
             }, { threshold: 0.1 });
-        
+
             observer.observe(textContainer);
-        
+
             function revealText() {
                 let i = 0;
                 const interval = setInterval(() => {
@@ -84,9 +114,9 @@
                     }
                 }, 100);  // Ajusta el tiempo entre letras (100 ms en este caso)
             }
-            }
-        });
-        
+        }
+    });
+
 
     // Navbar on scrolling
     $(window).scroll(function () {
