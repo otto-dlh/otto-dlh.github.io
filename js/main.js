@@ -82,8 +82,46 @@
         { nombre: "Vaneska Corado", valor: 2 }
       ];
       
+      // Ejecutar el código cuando el contenido del DOM esté completamente cargado
+      document.addEventListener('DOMContentLoaded', function() {
+        const audio = document.getElementById('miAudio');
+        const buttons = document.querySelectorAll('.controlAudio'); // Seleccionar ambos botones
+
+        // Añadir el evento de clic a todos los botones
+        buttons.forEach(function(button) {
+            button.addEventListener('click', togglePlayPause);
+        });
+
+        // Función para reproducir o pausar el audio y actualizar el texto de los botones
+        function togglePlayPause() {
+            if (audio.paused) {
+                audio.play();
+                
+            } else {
+                audio.pause();
+                
+            }
+        }
+
+        // Función para actualizar el texto de todos los botones
+        function updateButtonText(text) {
+            buttons.forEach(function(button) {
+                button.textContent = text;
+            });
+        }
+
+        // Pausar el audio cuando el usuario cambie de pestaña
+        document.addEventListener('visibilitychange', function() {
+            if (document.hidden) {
+                audio.pause();
+                updateButtonText("Reproducir música"); // Actualiza todos los botones
+            }
+        });
+    });
       
     $(document).ready(function () {
+        
+
         function actualizarReloj() {
             const ahora = new Date().getTime();
             const diferencia = fechaObjetivo - ahora;
