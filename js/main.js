@@ -129,6 +129,19 @@
         if (resultado) {
             document.getElementById('resultado').innerText = ` ${resultado.nombre} \n Cantidad de personas: ${resultado.valor}`;
         }
+
+        function togglePlayPause() {
+            const audio = document.getElementById('miAudio');
+            const button = document.getElementById('controlAudio');
+    
+            if (audio.paused) {
+                audio.play();
+                button.textContent = "Pausar música"; // Cambiar el texto del botón
+            } else {
+                audio.pause();
+                button.textContent = "Reproducir música"; // Cambiar el texto del botón
+            }
+        }
     });
     /*function actualizarContador() {
         const fechaObjetivo = new Date('2025-01-18T00:00:00');

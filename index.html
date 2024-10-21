@@ -9,7 +9,8 @@
     <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    
+    
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -78,16 +79,21 @@
                 <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
                     <img class="position-absolute w-100 h-100" src="img/antigua_nombres-min.jpg"
                         style="object-fit: cover;">
+                    <audio id="miAudio">
+                        <source src="media/luna_de_xelaju.mp3" type="audio/mpeg">
+                    </audio>
                     <div class="carousel-caption d-flex flex-column align-items-center ">
                         <div class="p-3" style="max-width: 900px;">
-                            <br><br><br>
+                            <br><br><br><br><br><br><br><br>
                             <!--h1 class="display-1 font-secondary  mt-n3 mb-md-4">Otto</h1>
                             <h1 class="display-1 font-secondary mt-n3 mb-md-4">&</h1>
                             <h1 class="display-1 font-secondary  mt-n3 mb-md-4">Susy</h1-->
-                            <!--button type="button" class="btn-play mx-auto" data-toggle="modal"
-                                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                                <br><br><br>
+                            <button type="button" class="btn-play mx-auto" data-toggle="modal" data-target="#videoModal"
+                                onclick="document.getElementById('miAudio').play()">
                                 <span></span>
-                            </button-->
+                            </button>
+
                         </div>
                     </div>
                 </div>
@@ -103,10 +109,10 @@
                             <!--h3 class="text-uppercase font-weight-normal text-white m-0"
                                     style="letter-spacing: 2px;">Nos vamos a casar</h3-->
                         </div>
-                        <!--button type="button" class="btn-play mx-auto" data-toggle="modal"
-                                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
-                                <span></span>
-                            </button-->
+                        <button type="button" class="btn-play mx-auto" data-toggle="modal" data-target="#videoModal"
+                            onclick="document.getElementById('miAudio').play()">
+                            <span></span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -128,7 +134,7 @@
     <div class="container-fluid d-flex justify-content-center align-items-center full-height position-relative">
         <!-- Imagen añadida directamente en HTML -->
         <img class="background-image" src="img/arcoantigua.jpg" alt="Imagen de fondo">
-        
+
         <!-- Cuadro blanco centrado -->
         <div class="text-overlay">
             <h1 class="display-1 font-secondary mt-n3 mb-md-4 ">Susy & Otto</h1>
@@ -143,7 +149,7 @@
     <div class="container-fluid d-flex justify-content-center align-items-center full-height position-relative">
         <!-- Imagen añadida directamente en HTML -->
         <img class="background-image" src="img/comida.jpg" alt="Imagen de fondo">
-        
+
         <!-- Cuadro blanco centrado -->
         <div class="text-overlay">
             <h1 class="section-title font-secondary display-4">S&aacute;bado</h1>
@@ -193,7 +199,7 @@
     <div class="container-fluid d-flex justify-content-center align-items-center full-height position-relative">
         <!-- Imagen añadida directamente en HTML -->
         <img class="background-image" src="img/azulejo.jpg" alt="Imagen de fondo">
-        
+
         <!-- Cuadro blanco centrado -->
         <div class="text-overlay">
             <div class=" position-relative text-center">
@@ -202,7 +208,7 @@
             </div>
             <div class="section-title position-relative text-center">
                 <h1 class="font-secondary display-4 ">Confirma tu asistencia</h1>
-    
+
                 <i class="far fa-heart text-dark"></i>
             </div>
             <div class="text-center">
@@ -215,7 +221,7 @@
             </div>
         </div>
     </div>
-    
+
 
     <!-- Gallery Start -->
     <div class="container-fluid bg-gallery" id="gallery" style="padding: 120px 0; margin: 90px 0;">
@@ -274,7 +280,7 @@
                 <h1 class="font-secondary display-3 text-white">Te esperamos</h1>
                 <i class="far fa-heart text-white"></i>
             </div>
-            
+
         </div>
     </div>
     <!-- Footer End -->
