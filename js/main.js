@@ -2,7 +2,7 @@
     "use strict";
     
     //constantes
-    const fechaObjetivo = new Date('2025-01-18T00:00:00').getTime();
+    const fechaObjetivo = new Date('2025-01-18T15:00:00').getTime();
     const data = [
         { nombre: "Ottoniel de León", valor: 1 },
         { nombre: "Ligia Chanquín", valor: 1 },
