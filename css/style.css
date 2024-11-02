@@ -36,6 +36,15 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+@font-face {
+  font-family: 'adelia';
+  src: url('../fonts/adelia-webfont.woff2') format('woff2'),
+  url('../fonts/adelia-webfont.woff') format('woff'),
+  url('../fonts/adelia.otf') format('opentype');
+font-weight: normal;
+font-style: normal;
+}
+
 /* Asegura que todo el contenedor ocupe el 100% de la pantalla */
 .full-height {
   height: 100vh;
@@ -9509,6 +9518,17 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: "Noto Serif Display", serif;
   font-optical-sizing: auto;
   font-size: 1rem;
+  font-weight: 550;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 200;
+}
+
+.font-adelia {
+  font-family: "adelia", serif;
+  
+  font-optical-sizing: auto;
+  font-size: 2rem;
   font-weight: 550;
   font-style: normal;
   font-variation-settings:
