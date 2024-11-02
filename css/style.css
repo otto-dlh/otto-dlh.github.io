@@ -45,10 +45,24 @@ font-weight: normal;
 font-style: normal;
 }
 
+@font-face {
+  font-family: "barbie";
+  src: url('../fonts/Barbie.otf');
+}
+
+@font-face {
+  font-family: "chistmas";
+  src: url('../fonts/Christmas-Mint.ttf');
+}
+
 /* Asegura que todo el contenedor ocupe el 100% de la pantalla */
 .full-height {
   height: 100vh;
 }
+.icon-image{
+  width: 10%;
+}
+
 .background-image {
   /* Imagen de fondo en posición fija detrás del contenido */
   width: 100%;
@@ -59,6 +73,18 @@ font-style: normal;
   left: 0;
   z-index: -1;
 }
+
+.background-image-left {
+  /* Imagen de fondo en posición fija detrás del contenido */
+  width: 180%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 .text-overlay {
   /* Cuadro blanco centrado */
   background-color: rgba(255, 255, 255, 0.8);
@@ -2423,20 +2449,20 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #E47A2E;
-  border-color: #E47A2E;
+  background-color: #0e6655;
+  border-color: #0e6655;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #d1671b;
-  border-color: #c5611a;
+  background-color: #0e6655;
+  border-color: #0e6655;
 }
 
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #d1671b;
-  border-color: #c5611a;
+  background-color: #0e6655;
+  border-color: #0e6655;
   box-shadow: 0 0 0 0.2rem rgba(232, 142, 77, 0.5);
 }
 
@@ -6222,7 +6248,7 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #0b5345 !important;
+  background-color: #0e6655 !important;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
@@ -9524,6 +9550,25 @@ a.text-dark:hover, a.text-dark:focus {
     "wdth" 200;
 }
 
+.font-chrismas {
+  font-family: "chistmas", serif;
+  font-optical-sizing: auto;
+  font-size: 2.5rem;
+  font-weight: 550;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 200;
+}
+.font-barbie {
+  font-family: "barbie", serif;
+  font-optical-sizing: auto;
+  font-size: 1.5rem;
+  font-weight: 550;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 200;
+}
+
 .font-adelia {
   font-family: "adelia", serif;
   
@@ -9826,9 +9871,23 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .bg-gallery {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/IMG-EDIT1-min.jpeg), no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/xela.jpeg), no-repeat;
+  background-size: 50% 50%;
+  width: 100%;
+  height: 100%;
   background-size: cover;
+  
 }
+
+.bg-foother {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/IMG_FONDO.jpg), no-repeat;
+  background-size: 50% 50%;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  
+}
+
 
 .gallery-carousel .owl-nav {
   position: absolute;

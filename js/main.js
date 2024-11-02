@@ -1,6 +1,6 @@
 (function ($) {
     "use strict";
-    
+
     //constantes
     const fechaObjetivo = new Date('2025-01-18T15:00:00').getTime();
     const data = [
@@ -80,15 +80,15 @@
         { nombre: "Soly", valor: 1 },
         { nombre: "Doña Xiomara", valor: 2 },
         { nombre: "Vaneska Corado", valor: 2 }
-      ];
-      
-      // Ejecutar el código cuando el contenido del DOM esté completamente cargado
-      document.addEventListener('DOMContentLoaded', function() {
+    ];
+
+    // Ejecutar el código cuando el contenido del DOM esté completamente cargado
+    document.addEventListener('DOMContentLoaded', function () {
         const audio = document.getElementById('miAudio');
         const buttons = document.querySelectorAll('.controlAudio'); // Seleccionar ambos botones
 
         // Añadir el evento de clic a todos los botones
-        buttons.forEach(function(button) {
+        buttons.forEach(function (button) {
             button.addEventListener('click', togglePlayPause);
         });
 
@@ -96,31 +96,31 @@
         function togglePlayPause() {
             if (audio.paused) {
                 audio.play();
-                
+
             } else {
                 audio.pause();
-                
+
             }
         }
 
         // Función para actualizar el texto de todos los botones
         function updateButtonText(text) {
-            buttons.forEach(function(button) {
+            buttons.forEach(function (button) {
                 button.textContent = text;
             });
         }
 
         // Pausar el audio cuando el usuario cambie de pestaña
-        document.addEventListener('visibilitychange', function() {
+        document.addEventListener('visibilitychange', function () {
             if (document.hidden) {
                 audio.pause();
-                updateButtonText("Reproducir música"); // Actualiza todos los botones
+                //updateButtonText("Reproducir música"); // Actualiza todos los botones
             }
         });
     });
-      
+
     $(document).ready(function () {
-        
+
 
         function actualizarReloj() {
             const ahora = new Date().getTime();
@@ -171,7 +171,7 @@
         function togglePlayPause() {
             const audio = document.getElementById('miAudio');
             const button = document.getElementById('controlAudio');
-    
+
             if (audio.paused) {
                 audio.play();
                 button.textContent = "Pausar música"; // Cambiar el texto del botón
@@ -181,51 +181,6 @@
             }
         }
     });
-    /*function actualizarContador() {
-        const fechaObjetivo = new Date('2025-01-18T00:00:00');
-        const fechaActual = new Date();
-        const diferenciaTiempo = fechaObjetivo - fechaActual;
-
-        if (diferenciaTiempo <= 0) {
-            clearInterval(intervalo);
-            document.getElementById('contador').textContent = "¡Hoy es el día!";
-            return;
-        }
-
-        const diasRestantes = Math.floor(diferenciaTiempo / (1000 * 60 * 60 * 24));
-        const horasRestantes = Math.floor((diferenciaTiempo % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutosRestantes = Math.floor((diferenciaTiempo % (1000 * 60 * 60)) / (1000 * 60));
-        const segundosRestantes = Math.floor((diferenciaTiempo % (1000 * 60)) / 1000);
-
-        const horasFormateadas = horasRestantes.toString().padStart(2, '0');
-        const minutosFormateados = minutosRestantes.toString().padStart(2, '0');
-        const segundosFormateados = segundosRestantes.toString().padStart(2, '0');
-
-        document.getElementById('contador').textContent = `Falta ${diasRestantes} días, ${horasFormateadas}:${minutosFormateados}:${segundosFormateados}`;
-    }
-
-    //const intervalo = setInterval(actualizarContador, 1000); // Actualiza cada segundo
-    //actualizarContador(); // Llama a la función inmediatamente para evitar el retraso inicial
-
-    // Definir la fecha y hora objetivo (18/01/2025 a las 3pm)
-    const fechaHoraObjetivo = new Date('2025-01-18T15:00:00');
-
-    // Obtener la marca de tiempo de Unix en milisegundos
-    const marcaTiempoUnixMilisegundos = fechaHoraObjetivo.getTime();
-
-    // Convertir la marca de tiempo de Unix de milisegundos a segundos
-    const marcaTiempoUnixSegundos = Math.floor(marcaTiempoUnixMilisegundos / 1000);
-    // Set up FlipDown
-    var flipdown = new FlipDown(marcaTiempoUnixSegundos)
-
-        // Start the countdown
-        .start()
-
-        // Do something when the countdown ends
-        .ifEnded(() => {
-            console.log('The countdown has ended!');
-        });
-        */
 
     document.addEventListener('DOMContentLoaded', function () {
         const textContainer = document.querySelector('.text-container');
@@ -233,8 +188,8 @@
 
         // Verifica si textElement no es nulo
         if (!textElement) {
-            console.error("No se encontró un elemento con el ID 'animated-text'");
-            //return;
+            console.log("No se encontró un elemento con el ID 'animated-text'");
+            return;
         }
         else {
 
@@ -296,7 +251,7 @@
 
 
     // Modal Video
-    $(document).ready(function () {
+    /*$(document).ready(function () {
         var $videoSrc;
         $('.btn-play').click(function () {
             $videoSrc = $(this).data("src");
@@ -310,7 +265,7 @@
         $('#videoModal').on('hide.bs.modal', function (e) {
             $("#video").attr('src', $videoSrc);
         })
-    });
+    });*/
 
 
     // Scroll to Bottom
