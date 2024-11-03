@@ -53,19 +53,19 @@
         </button>
         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
             <div class="navbar-nav ml-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#story" class="nav-item nav-link">Story</a>
-                <a href="#gallery" class="nav-item nav-link">Gallery</a>
+                <a href="#home" class="font-base nav-item nav-link active">Home</a>
+                <a href="#about" class="font-base nav-item nav-link">Nosotros</a>
+                <a href="#location" class="font-base nav-item nav-link">Ubicaci&oacute;n</a>
+                <a href="#guest" class="font-base nav-item nav-link">Invitado</a>
             </div>
-            <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
+            <a href="index.html" class="font-base navbar-brand mx-5 d-none d-lg-block">
                 <h1 class="font-secondary text-white mb-n2">Susy <span class="text-primary">&</span> Otto</h1>
             </a>
             <div class="navbar-nav mr-auto py-0">
-                <a href="#family" class="nav-item nav-link">Family</a>
-                <a href="#event" class="nav-item nav-link">Event</a>
-                <a href="#rsvp" class="nav-item nav-link">RSVP</a>
-                <a href="#contact" class="nav-item nav-link">Contact</a>
+                <a href="#gift" class="font-base nav-item nav-link">Sugerencia Regalos</a>
+                <a href="#dresscode" class="font-base nav-item nav-link">Dress Code</a>
+                <a href="#gallery" class="font-base nav-item nav-link">Galer&iacute;a</a>
+                <a href="#quote" class="font-base nav-item nav-link">Cita</a>
             </div>
         </div>
     </nav>
@@ -131,7 +131,7 @@
     </div>
     <!-- Carousel End -->
 
-    <div class="container-fluid d-flex justify-content-center align-items-center full-height position-relative">
+    <div id="about" class="container-fluid d-flex justify-content-center align-items-center full-height position-relative">
         <!-- Imagen añadida directamente en HTML -->
         <img class="background-image" src="img/icono3.png" alt="Imagen de fondo">
 
@@ -146,7 +146,7 @@
         </div>
     </div>
 
-    <div class="container-fluid d-flex justify-content-center align-items-center full-height position-relative">
+    <div id="location" class="container-fluid d-flex justify-content-center align-items-center full-height position-relative">
         <!-- Imagen añadida directamente en HTML -->
         <img class="background-image" src="img/comida.jpg" alt="Imagen de fondo">
 
@@ -196,7 +196,7 @@
         </div>
     </div>
 
-    <div class="container-fluid d-flex justify-content-center align-items-center full-height position-relative">
+    <div id="guest" class="container-fluid d-flex justify-content-center align-items-center full-height position-relative">
         <!-- Imagen añadida directamente en HTML -->
         <img class="background-image" src="img/marco-verde.jpeg" alt="Imagen de fondo">
 
@@ -214,16 +214,17 @@
                 <i class="far fa-heart text-dark"></i>
             </div>
             <div class="text-center">
-                <a href="https://wa.me/50236337642?text=Asistiré" target="_blank">
+                <a id="aceptaInv" href="https://wa.me/50236337642?text=Asistiré" target="_blank">
                     <button class="font-base btn btn-primary">Asistir&eacute;</button>
                 </a>
-                <a href="https://wa.me/50236337642?text=No%20podré%20asistir" target="_blank">
+                <a id="noAceptaInv" href="https://wa.me/50236337642?text=No%20podré%20asistir" target="_blank">
                     <button class="font-base btn btn-primary">No asistir&eacute;</button>
                 </a>
             </div>
         </div>
     </div>
-    <div class="container-fluid d-flex justify-content-center align-items-center full-height position-relative">
+
+    <div id="gift" class="container-fluid d-flex justify-content-center align-items-center full-height position-relative">
         <!-- Imagen añadida directamente en HTML -->
         <img class="background-image" src="img/tikal-edit.png" alt="Imagen de fondo">
         <!-- Cuadro blanco centrado -->
@@ -248,7 +249,7 @@
         
     </div>
 
-    <div class="text-overlay">
+    <div id="dresscode" class="text-overlay">
         <div class=" position-relative text-center">
             <h1 class="font-adelia display-4 ">Dress Code</h1>
             <h1 class="font-base display-4 " id="resultado"></h1>
@@ -353,7 +354,7 @@
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-foother text-white py-5" id="contact" style="margin-top: 0px;">
+    <div class="container-fluid bg-foother text-white py-5" id="quote" style="margin-top: 0px;">
         <div class="container text-center py-5">
             <div class=" position-relative text-center">
                 

@@ -168,6 +168,30 @@
             document.getElementById('resultado').innerText = ` ${resultado.nombre} \n Cantidad de personas: ${resultado.valor}`;
         }
 
+        const iValue = getQueryParameter('i');
+
+        const aceptaInv = document.getElementById('aceptaInv');
+        const NoaceptaInv = document.getElementById('noAceptaInv');
+
+        // Cambiar href del enlace basado en el valor de 'i'
+        if (iValue === 'NA') {
+            aceptaInv.href = 'https://wa.me/50236337642?text=Asistiré';
+        } else if (iValue === 'NO') {
+            aceptaInv.href = 'https://wa.me/50254119312?text=Asistiré';
+        } else {
+            aceptaInv.href = '#'; // Puedes definir un valor por defecto si el parámetro 'i' no está en la URL
+        }
+
+        // Cambiar href del enlace basado en el valor de 'i'
+        if (iValue === 'NA') {
+            NoaceptaInv.href = 'https://wa.me/50236337642?text=No%20podré%20asistir';
+        } else if (iValue === 'NO') {
+            NoaceptaInv.href = 'https://wa.me/50254119312?text=No%20podré%20asistir';
+        } else {
+            NoaceptaInv.href = '#'; // Puedes definir un valor por defecto si el parámetro 'i' no está en la URL
+        }
+
+
         function togglePlayPause() {
             const audio = document.getElementById('miAudio');
             const button = document.getElementById('controlAudio');
