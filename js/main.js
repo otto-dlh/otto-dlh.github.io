@@ -121,6 +121,17 @@
 
     $(document).ready(function () {
 
+        const navbarCollapse = document.getElementById("navbarCollapse");
+        const navLinks = navbarCollapse.querySelectorAll(".nav-link");
+
+        navLinks.forEach((link) => {
+            link.addEventListener("click", function () {
+                // Cierra el navbar colapsable
+                if (navbarCollapse.classList.contains("show")) {
+                    new bootstrap.Collapse(navbarCollapse).toggle();
+                }
+            });
+        });
 
         function actualizarReloj() {
             const ahora = new Date().getTime();
