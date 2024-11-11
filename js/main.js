@@ -186,18 +186,18 @@
 
         // Cambiar href del enlace basado en el valor de 'i'
         if (iValue === 'NA') {
-            aceptaInv.href = 'https://wa.me/50236337642?text=Asistiré';
+            aceptaInv.href = 'https://wa.me/50236337642?text=Confirmo%20mi%20asistencia%20para%20tu%20boda.';
         } else if (iValue === 'NO') {
-            aceptaInv.href = 'https://wa.me/50254119312?text=Asistiré';
+            aceptaInv.href = 'https://wa.me/50254119312?text=Confirmo%20mi%20asistencia%20para%20tu%20boda.';
         } else {
             aceptaInv.href = '#'; // Puedes definir un valor por defecto si el parámetro 'i' no está en la URL
         }
 
         // Cambiar href del enlace basado en el valor de 'i'
         if (iValue === 'NA') {
-            NoaceptaInv.href = 'https://wa.me/50236337642?text=No%20podré%20asistir';
+            NoaceptaInv.href = 'https://wa.me/50236337642?text=Lo%20lamento%20mucho%20pero%20no%20podré%20asistir';
         } else if (iValue === 'NO') {
-            NoaceptaInv.href = 'https://wa.me/50254119312?text=No%20podré%20asistir';
+            NoaceptaInv.href = 'https://wa.me/50254119312?text=Lo%20lamento%20mucho%20pero%20no%20podré%20asistir';
         } else {
             NoaceptaInv.href = '#'; // Puedes definir un valor por defecto si el parámetro 'i' no está en la URL
         }
