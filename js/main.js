@@ -40,7 +40,7 @@
         { "nombre": "Mónica Castellanos", "valor": 1 },
         { "nombre": "Saulo Camey", "valor": 1 },
         { "nombre": "Evelyn Castellanos", "valor": 2 },
-        { "nombre": "Familia Pineda", "valor": 2 },
+        { "nombre": "Familia Pineda Osorio", "valor": 2 },
         { "nombre": "Familia Avendaño Shioc", "valor": 4 },
         { "nombre": "Familia Echeverría Morales", "valor": 2 },
         { "nombre": "Familia Marroquín", "valor": 2 },
