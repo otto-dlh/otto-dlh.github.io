@@ -32,7 +32,7 @@
         { "nombre": "Miranda Matías", "valor": 1 },
         { "nombre": "Jeannifer Pérez", "valor": 1 },
         { "nombre": "Bryant Bran", "valor": 1 },
-        { "nombre": "Telma", "valor": 1 },
+        { "nombre": "Telma Gómez", "valor": 1 },
         { "nombre": "Dhaffnne Arriola", "valor": 1 },
         { "nombre": "Familia Fuentes Cruz", "valor": 2 },
         { "nombre": "Evelyn Nájera", "valor": 1 },
