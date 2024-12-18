@@ -81,7 +81,13 @@
         { "nombre": "Heiry Cruz", "valor": 1 },
         { "nombre": "Abi De León", "valor": 3 },
         { "nombre": "María José Morales", "valor": 1 },
-        { "nombre": "Sara Ostorga", "valor": 2 }
+        { "nombre": "Sara Ostorga", "valor": 2 },
+        { "nombre": "Vale Matías", "valor": 1 },
+        { "nombre": "Khristian Román", "valor": 1 },
+        { "nombre": "Christiaan Mendoza", "valor": 1 },
+        { "nombre": "Luz María Pérez", "valor": 1 },
+        { "nombre": "Antonia de León", "valor": 2 },
+        { "nombre": "Fam. Salvatierra", "valor": 3 },
     ];
 
     // Ejecutar el código cuando el contenido del DOM esté completamente cargado
