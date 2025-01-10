@@ -14,7 +14,7 @@
         { "nombre": "Familia Castillo Solís", "valor": 2 },
         { "nombre": "Familia Váldez Villeda", "valor": 2 },
         { "nombre": "Familia Ham Girón", "valor": 3 },
-        { "nombre": "Silvia González", "valor": 1 },
+        { "nombre": "Maytte Shioc", "valor": 1 },
         { "nombre": "Daniela Vásquez", "valor": 2 },
         { "nombre": "Dulce Noriega", "valor": 1 },
         { "nombre": "Familia Urbina Palencia", "valor": 2 },
