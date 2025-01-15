@@ -36,7 +36,7 @@
         { "nombre": "Dhaffnne Arriola", "valor": 1 },
         { "nombre": "Familia Fuentes Cruz", "valor": 2 },
         { "nombre": "Evelyn Nájera", "valor": 1 },
-        { "nombre": "Williams Mejía", "valor": 1 },
+        { "nombre": "Williams Mejía", "valor": 2 },
         { "nombre": "Mónica Castellanos", "valor": 1 },
         { "nombre": "Saulo Camey", "valor": 1 },
         { "nombre": "Familia Batz Gómez", "valor": 2 },
