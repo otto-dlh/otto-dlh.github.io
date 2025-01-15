@@ -84,7 +84,7 @@
         { "nombre": "Sara Ostorga", "valor": 2 },
         { "nombre": "Vale Matías", "valor": 1 },
         { "nombre": "Khristian Román", "valor": 1 },
-        { "nombre": "Alex Cis", "valor": 1 },
+        { "nombre": "Alex Sis", "valor": 1 },
         { "nombre": "Luz María Pérez", "valor": 1 },
         { "nombre": "Castillo Chavez", "valor": 2 },
         { "nombre": "Fam. Salvatierra", "valor": 3 },
