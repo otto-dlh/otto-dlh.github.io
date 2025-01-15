@@ -90,7 +90,7 @@
         { "nombre": "Fam. Salvatierra", "valor": 3 },
         { "nombre": "Jacob Mejía", "valor": 1 },
         { "nombre": "Darkis Burgos", "valor": 1 },
-        { "nombre": "Mayte Shioc", "valor": 1 },
+        { "nombre": "Maytte Shioc", "valor": 1 },
     ];
 
     // Ejecutar el código cuando el contenido del DOM esté completamente cargado
